@@ -5,7 +5,7 @@ import time
 def feed_func():
     try:
         feed = sc.MicrophoneFeed()
-        detector = sc.AmplitudeDetector(feed, threshold=10000000) # threshold is changeable
+        detector = sc.AmplitudeDetector(feed, threshold=10000000) # threshold is changeable (default 17000000)
 
         for clap in detector: # iteration over each incoming sample
 
